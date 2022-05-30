@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <title>Jogo das Naves | By: LM</title>
+    <link rel="icon" href="./assets/img/LM-icon.jpg">
+</head>
+
+<body>
+    <main id="container">
+
+        <!--Espaço do jogo-->
+        <section id="fundoGame">
+
+            <!--Container contendo informações-->
+            <div id="inicio" onclick="start()">
+                <h1> Resgate </h1>
+                <p>
+                    Utilize a tecla W para movimentar o helicóptero para cima, a tecla S para movimentar o helicóptero para baixo e a tecla D para atirar.
+                </p>
+                <p> Clique aqui para iniciar!! </p>
+
+                <div class="developer">
+                    <h2>
+                        Jogo desenvolvido por: Lucas Souza
+                    </h2>
+                    <div class="img-redes">
+                        
+                        <a href="https://www.linkedin.com/in/lucaslmsc/" target="_blank">
+                            <img src="./assets/img/Linkedin.png" alt="Linkedin" />
+                        </a>
+                        
+                        <a href="https://github.com/LucasLM1" target="_blank">
+                            <img src="./assets/img/GitHub.png" alt="GitHub" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sons do jogo !-->
+    <audio src="./assets/sounds/som.mp3" preload="auto" id="somDisparo"></audio>
+    <audio src="./assets/sounds/explosao.mp3" preload="auto" id="somExplosao"></audio>
+    <audio src="./assets/sounds/musica_fundo.mp3" preload="auto" id="musica"></audio>
+    <audio src="./assets/sounds/gameover.mp3" preload="auto" id="somGameover"></audio>
+    <audio src="./assets/sounds/perdido.mp3" preload="auto" id="somPerdido"></audio>
+    <audio src="./assets/sounds/resgate.mp3" preload="auto" id="somResgate"></audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha512-nhY06wKras39lb9lRO76J4397CH1XpRSLfLJSftTeo3+q2vP7PaebILH9TqH+GRpnOhfAGjuYMVmVTOZJ+682w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-collision.min.js"></script>
+</body>
+
+</html>
